@@ -55,7 +55,7 @@ Requires JDK 21 (LTS) and Maven 3.8+ (`java -version`, `mvn -v`).
 
 ## Continuous integration
 
-GitHub Actions builds and tests `api-gateway`, `order-service`, and `user-service` on pushes to any branch and on pull requests. Each service runs `mvn --batch-mode verify` with Java 21. Deployment is not configured.
+GitHub Actions builds and tests `api-gateway`, `order-service`, and `user-service` on pushes to `main`. You can also start it manually from the repository's Actions tab. Each service runs `mvn --batch-mode verify` with Java 21. Deployment is not configured.
 
 | Service       | Port | Role                                   |
 |---------------|------|----------------------------------------|
