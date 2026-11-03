@@ -53,6 +53,10 @@ There’s a small JUnit test in user-service. Run it with cd user-service && mvn
 
 Requires JDK 21 (LTS) and Maven 3.8+ (`java -version`, `mvn -v`).
 
+## Continuous integration
+
+GitHub Actions builds and tests `api-gateway`, `order-service`, and `user-service` on pushes to any branch and on pull requests. Each service runs `mvn --batch-mode verify` with Java 21. Deployment is not configured.
+
 | Service       | Port | Role                                   |
 |---------------|------|----------------------------------------|
 | api-gateway   | 8080 | Single entry point, routes to services |
